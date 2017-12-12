@@ -1,22 +1,62 @@
 package projectX;
 import java.time.format.DateTimeFormatter;
 
-public class ProjectInfo {
+// - userId: string
+// - projectName: String
+// - startDate: date
+// - endDate: date
+// - description: String
+// + addProject
+// + delProject
+// + cusProject
+// + getUserid
+
+public class ProjectInfo extends ProjectManager {
 	private String userID;
 	private String projectName;
 	private DateTimeFormatter startDate;
 	private DateTimeFormatter endDate;
 	private String description;
-	
-	
-	// - userId: string
-	// - projectName: String
-	// - startDate: date
-	// - endDate: date
-	// - description: String
-	// + addProject
-	// + delProject
-	// + cusProject
-	// + getUserid
+
+	public String getUserID() {
+		return userID;
+	}
+
+	public void setUserID(String userID) {
+		this.userID = userID;
+	}
+
+	public String getProjectName() {
+		return projectName;
+	}
+
+	public void setProjectName(String projectName) {
+		this.projectName = projectName;
+	}
+
+	public DateTimeFormatter getStartDate() {
+		return startDate;
+	}
+
+	public void setStartDate(DateTimeFormatter startDate) {
+		this.startDate = startDate;
+	}
+
+	public DateTimeFormatter getEndDate() {
+		return endDate;
+	}
+
+	public void setEndDate(DateTimeFormatter endDate) {
+		this.endDate = endDate;
+	}
+
+	public String getDescription() {
+		return description;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
+	}
+
 
 }

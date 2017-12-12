@@ -1,21 +1,22 @@
 package projectX;
 
+//userId: string
+//-       status: String
+//+ getLogin
+//+ getStatus
+//+ getUser
+//+ getAgenda
+//+ getProject
+
 public class ProjectManager {
 	private int status;
-	
-	
-//	userId: string
-//	-       status: String
-//	+ getLogin
-//	+ getStatus
-//	+ getUser
-//	+ getAgenda
-//	+ getProject
 
+	public int getStatus() {
+		return status;
+	}
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+	public void setStatus(int status) {
+		this.status = status;
 	}
 
 }

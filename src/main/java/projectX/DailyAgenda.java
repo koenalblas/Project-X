@@ -1,5 +1,5 @@
 package projectX;
 
-public class DailyAgenda {
+public class DailyAgenda extends AgendaItem {
 
 }
