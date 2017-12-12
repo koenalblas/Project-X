@@ -1,6 +1,8 @@
-package projectX;
+package projectX.dao;
 
 import java.util.List;
+
+import projectX.AgendaItem;
 
 public class AgendaItemDAO {
 
