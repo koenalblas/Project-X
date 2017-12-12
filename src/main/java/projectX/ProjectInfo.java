@@ -12,6 +12,7 @@ import java.time.format.DateTimeFormatter;
 // + getUserid
 
 public class ProjectInfo extends ProjectManager {
+
 	private String userID;
 	private String projectName;
 	private DateTimeFormatter startDate;

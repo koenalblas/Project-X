@@ -9,6 +9,20 @@ package projectX;
 // +logOff();
 
 public class Users {
+	
+	private String userID;
+	private String password;
+	private String loginStatus;
+	private boolean isAdmin = true;
+
+	public boolean isAdmin() {
+		return isAdmin;
+	}
+
+	public void setAdmin(boolean isAdmin) {
+		this.isAdmin = isAdmin;
+	}
+
 	public String getUserID() {
 		return userID;
 	}
@@ -32,9 +46,5 @@ public class Users {
 	public void setLoginStatus(String loginStatus) {
 		this.loginStatus = loginStatus;
 	}
-
-	private String userID;
-	private String password;
-	private String loginStatus;
 
 }

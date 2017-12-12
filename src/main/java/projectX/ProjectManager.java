@@ -9,6 +9,7 @@ package projectX;
 //+ getProject
 
 public class ProjectManager {
+
 	private int status;
 
 	public int getStatus() {

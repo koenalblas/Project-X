@@ -4,6 +4,7 @@ package projectX;
 //+ cusCompanyID
 
 public class Company {
+	
 	private String companyID;
 
 	public String getCompanyID() {
