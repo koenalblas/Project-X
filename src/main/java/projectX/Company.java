@@ -1,9 +1,9 @@
 package projectX;
 
 public class Company {
-
+	private String companyID;
 	
-//	-       companyID: String
+	
 //	+ addCompanyID
 //	+ delCompanyID
 //	+ cusCompanyID

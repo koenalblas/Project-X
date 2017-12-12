@@ -1,6 +1,8 @@
 package projectX;
 
 public class ProjectManager {
+	private int status;
+	
 	
 //	userId: string
 //	-       status: String
