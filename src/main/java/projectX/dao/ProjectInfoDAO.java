@@ -13,13 +13,14 @@ public class ProjectInfoDAO {
 	static {
 		projectInformatie.add(new ProjectInfo(1, "Henk", "Verover de maan", "Stappenplan voor het overnemen van de bekende hemellichaam"));
 		projectInformatie.add(new ProjectInfo(2, "Piet", "Eet alle kaas", "Er mag hierna geen kaas meer overblijven"));
+		projectInformatie.add(new ProjectInfo(3, "Klaas", "Git++", "Leuker kunnen we het niet maken, wel ingewikkelder"));
 	}
 	
-	public List<ProjectInfo> getAllProjects() {
+	public static List<ProjectInfo> getAllProjects() {
 		return projectInformatie;
 	}
 	
-	public ProjectInfo getProjectInfo(int projectID) {
+	public static ProjectInfo getProjectInfo(int projectID) {
 		return projectInformatie.get(projectID);
 	}
 	

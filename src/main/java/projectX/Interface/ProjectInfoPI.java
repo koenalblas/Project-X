@@ -1,5 +1,7 @@
-package projectX;
+package projectX.Interface;
 import java.util.List;
+
+import projectX.ProjectInfo;
 
 public interface ProjectInfoPI {
 

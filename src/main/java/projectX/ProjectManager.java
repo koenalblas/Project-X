@@ -1,5 +1,8 @@
 package projectX;
 
+import projectX.Interface.ProjectInfoPI;
+import projectX.dao.ProjectInfoDAO;
+
 //userId: string
 //-       status: String
 //+ getLogin
@@ -18,6 +21,14 @@ public class ProjectManager {
 
 	public void setStatus(int status) {
 		this.status = status;
+	}
+	
+	public static void main(String[] args) {
+		for (ProjectInfo id : ProjectInfoDAO.getAllProjects()) {
+			System.out.println("Project van " + id.getUserID() + " is : " + id.getProjectName());
+			System.out.println("Omschrijving: " + id.getDescription());
+			System.out.println("");
+		}
 	}
 
 }

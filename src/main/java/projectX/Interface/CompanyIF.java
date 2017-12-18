@@ -1,17 +1,19 @@
-package com.example.demo;
+package projectX.Interface;
 
 import java.util.List;
+
+import projectX.Company;
 
 public interface CompanyIF {
 	
 	//
 
-	private List<Company> getAllCompanies();
+	public List<Company> getAllCompanies();
 
-	private Company getCompany(String companyID);
+	public Company getCompany(String companyID);
 
-	private void updateCompany(Company company);
+	public void updateCompany(Company company);
 
-	private void deleteCompany(Company company);
+	public void deleteCompany(Company company);
 
 }
