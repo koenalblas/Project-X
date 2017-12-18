@@ -1,5 +1,6 @@
 package projectX;
 import java.time.format.DateTimeFormatter;
+import java.util.Date;
 
 // + addItem
 // + addComment
@@ -11,9 +12,18 @@ import java.time.format.DateTimeFormatter;
 public class AgendaItem {
 
 	private String itemName;
-	private DateTimeFormatter startDate;
-	private DateTimeFormatter endDate;
+	private String startDate;
+	private String endDate;
 	private String description;
+
+	public AgendaItem(String itemName, String startDate, String endDate, String description) {
+		// TODO Auto-generated constructor stub
+		this.itemName = itemName;
+		this.startDate = startDate;
+		this.endDate = endDate;
+		this.description = description;
+
+	}
 
 	public String getItemName() {
 		return itemName;
@@ -23,19 +33,19 @@ public class AgendaItem {
 		this.itemName = itemName;
 	}
 
-	public DateTimeFormatter getStartDate() {
+	public String getStartDate() {
 		return startDate;
 	}
 
-	public void setStartDate(DateTimeFormatter startDate) {
+	public void setStartDate(String startDate) {
 		this.startDate = startDate;
 	}
 
-	public DateTimeFormatter getEndDate() {
+	public String getEndDate() {
 		return endDate;
 	}
 
-	public void setEndDate(DateTimeFormatter endDate) {
+	public void setEndDate(String endDate) {
 		this.endDate = endDate;
 	}
 
