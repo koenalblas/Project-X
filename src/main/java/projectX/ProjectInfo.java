@@ -1,4 +1,5 @@
 package projectX;
+
 import java.time.format.DateTimeFormatter;
 
 // - userId: string
@@ -13,6 +14,7 @@ import java.time.format.DateTimeFormatter;
 
 public class ProjectInfo extends ProjectManager {
 
+	private int projectID;
 	private String userID;
 	private String projectName;
 	private DateTimeFormatter startDate;
@@ -59,5 +61,10 @@ public class ProjectInfo extends ProjectManager {
 		this.description = description;
 	}
 
-
+	public ProjectInfo(int projectID, String userID, String projectName, String description) {
+		this.projectID = projectID;
+		this.userID = userID;
+		this.projectName = projectName;
+		this.description = description;
+	}
 }
