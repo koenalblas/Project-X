@@ -1,12 +1,20 @@
 package projectX.dao;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import projectX.Company;
 
 public class CompanyDAO {
+	
+	// 
 
-	private List<Company> comp;
+	private List<Company> getAllCompanies();
+	private Company getCompany (String companyID);
+	private void updateCompany (Company company);
+	private void deleteCompany (Company company);
+	
+	
 
 	public List<Company> getComp() {
 		return comp;
