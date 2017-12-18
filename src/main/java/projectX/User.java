@@ -10,7 +10,7 @@ package projectX;
 
 public class User {
 	
-	private String userID;
+	private int userID;
 	private String password;
 	private String firstName;
 	private String lastName;
@@ -22,10 +22,19 @@ public class User {
 		
 	}
 	
-	public User(String firstName, String lastName, String password) {
+	public void setUserID(int userID) {
+		this.userID = userID;
+	}
+
+	public int getUserID() {
+		return userID;
+	}
+
+	public User(String firstName, String lastName, String password, int userID) {
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.password = password;
+		this.userID = userID;
 	}
 	
 	public boolean isAdmin() {
@@ -34,10 +43,6 @@ public class User {
 
 	public void setAdmin(boolean isAdmin) {
 		this.isAdmin = isAdmin;
-	}
-
-	public String getUserID() {
-		return userID;
 	}
 
 	public String getFirstName() {
@@ -56,9 +61,6 @@ public class User {
 		this.lastName = lastName;
 	}
 
-	public void setUserID(String userID) {
-		this.userID = userID;
-	}
 
 	public String getPassword() {
 		return password;

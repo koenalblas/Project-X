@@ -11,12 +11,12 @@ public class UserDAO {
 	private static final List<User> users = new ArrayList<>();
 
 	static {
-		users.add(new User("Danny", "Odenkirchen", "2837"));
-		users.add(new User("Dominic", "NG", "2237"));
-		users.add(new User("Henk", "Quisqo", "4234"));
-		users.add(new User("Koen", "Alblas", "3453"));
-		users.add(new User("Christiaan", "Alblas", "6454"));
-		users.add(new User("Paul", "Alblas", "2342"));
+		users.add(new User("Danny", "Odenkirchen", "2837", 0));
+		users.add(new User("Dominic", "NG", "2237", 1));
+		users.add(new User("Henk", "Quisqo", "4234", 2));
+		users.add(new User("Koen", "Alblas", "3453", 3));
+		users.add(new User("Christiaan", "Alblas", "6454", 4));
+		users.add(new User("Paul", "Alblas", "2342", 5));
 	}
 
 	//  Search function with firstName
@@ -36,10 +36,18 @@ public class UserDAO {
 	// delete function for selected user
 	public static void deleteUser(User user) {
 		users.remove(user);
-		System.out.println(user + "has just been removed");
+		System.out.println(user.getFirstName() + " has just been removed");
+	}
+	
+	// return User with the given userID
+	public static User getUserWithID(int userID) {
+		return users.get(userID);
 	}
 	
 	// update function for selected user
+	public static void updateUser(User user) {
+		users.get(user.getUserID()).setFirstName(user.getFirstName());
+		System.out.println("User: " + user.getFirstName() + " has been updated");
+	}
 	
-
 }

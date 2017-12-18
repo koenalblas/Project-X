@@ -2,6 +2,7 @@ package projectX;
 
 import projectX.Interface.ProjectInfoPI;
 import projectX.dao.ProjectInfoDAO;
+import projectX.dao.UserDAO;
 
 //userId: string
 //-       status: String
@@ -29,6 +30,13 @@ public class ProjectManager {
 			System.out.println("Omschrijving: " + id.getDescription());
 			System.out.println("");
 		}
+		
+		try {
+			System.out.print(UserDAO.findUser("papi").getLastName());
+		} catch (NullPointerException e) {
+			System.out.println("User Not Found");
+		}
+		
 	}
 
 }
