@@ -5,21 +5,21 @@ package projectX;
 //+ cusCompanyID
 
 public class Company {
-	
-	//properties
+
+	// properties
 
 	private String companyID; // e.g. #45
 	private String companyName; // e.g. Campina
 
-	//constructor
-	
+	// constructor
+
 	public Company(String companyID, String companyName) {
 
 		this.companyID = companyID;
 		this.companyName = companyName;
 
 	}
-	
+
 	// getters & setters
 
 	public String getCompanyID() {
